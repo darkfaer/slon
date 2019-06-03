@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+	<div style="height: 300px; width: 300px; position: absolute; background: url(giena.jpg);background-size: 100% 100%" class="rr rr01">
+		
+	</div>
+	<div style="height: 300px; width: 300px; position: absolute; background: url(korova.jpg);margin-top: 320px;background-size: 100% 100%" class="rr2 02"></div>
+	<div style="height: 300px; width: 300px; position: absolute; background: url(antilop.jpg);margin-top: 635px; margin-left: 100px; background-size: 100% 100%" class="rr3 03"></div>
+	<div style="height: 300px; width: 300px; position: absolute; background: url(begemot.jpg);margin-top: 635px; margin-left: 430px; background-size: 100% 100%" class="rr4 04"></div>
+	<div style="height: 300px; width: 300px; position: absolute; background: url(jiraf.jpg);margin-top: 635px; margin-left: 760px; background-size: 100% 100%" class="rr5 05"></div>
+	<div style="height: 300px; width: 300px; position: absolute; background: url(elephant.jpg);margin-top: 635px; margin-left: 1090px; background-size: 100% 100%" class="rr6 06"></div>
+	<div style="height: 300px; width: 300px; position: absolute; background: url(lion.jpg);margin-top: 635px; margin-left: 1420px; background-size: 100% 100%" class="rr7 07"></div>
+	<div style="height: 300px; width: 300px; position: absolute; background: url(zebra.jpg);margin-top: 320px; margin-left: 1620px; background-size: 100% 100%" class="rr8 08"></div>
+	<div style="height: 300px; width: 300px; position: absolute; background: url(nosorog.jpg); margin-left: 1620px; background-size: 100% 100%" class="rr9 09"></div>
+	<div style="margin-left: 500px;">
+		<h1>Баллы:</h1>
+		<h1 class="ball">200</h1>
+	</div>
+	<div class="btn" style="position: absolute;display: none;"><button style="margin-left: 800px;" class=" btn-success">RESTART</button></div>
+	<div style="margin-left: 500px; margin-top: 100px;display: none;" class="vopros">
+		<img src="beg.png" class="w-25">
+		<h1>Найди бегемота ?</h1>
+	</div>
+
+
+	
+			<script type="text/javascript">
+
+			let funs = function(){
+				document.querySelector(".rr").style.background = "black";
+				document.querySelector(".rr2").style.background = "black";
+				document.querySelector(".rr3").style.background = "black";
+				document.querySelector(".rr4").style.background = "black";
+				document.querySelector(".rr5").style.background = "black";
+				document.querySelector(".rr6").style.background = "black";
+				document.querySelector(".rr7").style.background = "black";
+				document.querySelector(".rr8").style.background = "black";
+				document.querySelector(".rr9").style.background = "black";
+				document.querySelector(".vopros").style.display = "block";
+				document.querySelector(".btn").style.display = "block";
+
+			}
+			setTimeout(funs,2000);
+			let bal = 200;
+			let bal2= 200;
+			
+				
+				
+			
+			document.querySelector(".rr").onclick = function(){
+				alert("неверно");
+				bal=bal-25;
+				document.querySelector(".ball").innerHTML= bal;
+
+				document.querySelector(".rr").style.backgroundImage = "url(giena.jpg)";
+ 				document.querySelector(".rr").style.backgroundSize = "100% 100%";
+
+			}
+			document.querySelector(".rr2").onclick = function(){
+				alert("неверно");
+				bal=bal-25;
+				document.querySelector(".ball").innerHTML= bal;
+				document.querySelector(".rr2").style.backgroundImage = "url(korova.jpg)";
+ 				document.querySelector(".rr2").style.backgroundSize = "100% 100%"
+			}
+			document.querySelector(".rr3").onclick = function(){
+				alert("неверно");
+				bal=bal-25;
+				document.querySelector(".ball").innerHTML= bal;
+				document.querySelector(".rr3").style.backgroundImage = "url(antilop.jpg)";
+ 				document.querySelector(".rr3").style.backgroundSize = "100% 100%"
+			}
+			document.querySelector(".rr4").onclick = function(){
+				alert("Нашел");
+				bal=bal+100;
+				document.querySelector(".ball").innerHTML= bal;
+				document.querySelector(".rr4").style.backgroundImage = "url(begemot.jpg)";
+ 				document.querySelector(".rr4").style.backgroundSize = "100% 100%"
+			}
+			document.querySelector(".rr5").onclick = function(){
+				alert("неверно");
+				bal=bal-25;
+				document.querySelector(".ball").innerHTML= bal;
+				document.querySelector(".rr5").style.backgroundImage = "url(jiraf.jpg)";
+ 				document.querySelector(".rr5").style.backgroundSize = "100% 100%"
+			}
+			document.querySelector(".rr6").onclick = function(){
+				alert("неверно");
+				bal=bal-25;
+				document.querySelector(".ball").innerHTML= bal;
+				document.querySelector(".rr6").style.backgroundImage = "url(elephant.jpg)";
+ 				document.querySelector(".rr6").style.backgroundSize = "100% 100%"
+			}
+			document.querySelector(".rr7").onclick = function(){
+				alert("неверно");
+				bal=bal-25;
+				document.querySelector(".ball").innerHTML= bal;
+				document.querySelector(".rr7").style.backgroundImage = "url(lion.jpg)";
+ 				document.querySelector(".rr7").style.backgroundSize = "100% 100%"
+			}
+			document.querySelector(".rr8").onclick = function(){
+				alert("неверно");
+				bal=bal-25;
+				document.querySelector(".ball").innerHTML= bal;
+				document.querySelector(".rr8").style.backgroundImage = "url(zebra.jpg)";
+ 				document.querySelector(".rr8").style.backgroundSize = "100% 100%"
+			}
+			document.querySelector(".rr9").onclick = function(){
+				alert("неверно");
+				bal=bal-25;
+				document.querySelector(".ball").innerHTML= bal;
+				document.querySelector(".rr9").style.backgroundImage = "url(nosorog.jpg)";
+ 				document.querySelector(".rr9").style.backgroundSize = "100% 100%"
+			}
+			document.querySelector(".btn").onclick = function(){
+  				document.querySelector(".ball").innerHTML= bal2;
+				document.querySelector(".rr").style.backgroundImage = "url(giena.jpg)";
+ 				document.querySelector(".rr").style.backgroundSize = "100% 100%";
+ 				document.querySelector(".rr2").style.backgroundImage = "url(korova.jpg)";
+ 				document.querySelector(".rr2").style.backgroundSize = "100% 100%";
+ 				document.querySelector(".rr3").style.backgroundImage = "url(antilop.jpg)";
+ 				document.querySelector(".rr3").style.backgroundSize = "100% 100%";
+ 				document.querySelector(".rr4").style.backgroundImage = "url(begemot.jpg)";
+ 				document.querySelector(".rr4").style.backgroundSize = "100% 100%";
+ 				document.querySelector(".rr5").style.backgroundImage = "url(jiraf.jpg)";
+ 				document.querySelector(".rr5").style.backgroundSize = "100% 100%";
+ 				document.querySelector(".rr6").style.backgroundImage = "url(elephant.jpg)";
+ 				document.querySelector(".rr6").style.backgroundSize = "100% 100%";
+ 				document.querySelector(".rr7").style.backgroundImage = "url(lion.jpg)";
+ 				document.querySelector(".rr7").style.backgroundSize = "100% 100%"
+ 				document.querySelector(".rr8").style.backgroundImage = "url(zebra.jpg)";
+ 				document.querySelector(".rr8").style.backgroundSize = "100% 100%"
+ 				document.querySelector(".rr9").style.backgroundImage = "url(nosorog.jpg)";
+ 				document.querySelector(".rr9").style.backgroundSize = "100% 100%";
+ 				let res = function(){
+				document.querySelector(".rr").style.background = "orange";
+				document.querySelector(".rr2").style.background = "orange";
+				document.querySelector(".rr3").style.background = "orange";
+				document.querySelector(".rr4").style.background = "orange";
+				document.querySelector(".rr5").style.background = "orange";
+				document.querySelector(".rr6").style.background = "orange";
+				document.querySelector(".rr7").style.background = "orange";
+				document.querySelector(".rr8").style.background = "orange";
+				document.querySelector(".rr9").style.background = "orange";
+			}
+
+			setTimeout(res,4000);
+			
+			}
+
+			
+			
+			
+				
+			 
+		</script>
+	
+</body>
+</html>
